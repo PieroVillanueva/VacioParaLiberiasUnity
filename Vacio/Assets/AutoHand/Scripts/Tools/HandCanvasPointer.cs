@@ -52,8 +52,9 @@ namespace Autohand
                 cam.fieldOfView = 0.00001f;
                 cam.transform.parent = AutoHandExtensions.transformParent;
 
-                foreach (var canvas in FindObjectsOfType<Canvas>(true))
-                    if(canvas.renderMode == RenderMode.WorldSpace)
+                //foreach (var canvas in FindObjectsOfType<Canvas>(true)) Malogro piero
+                foreach (var canvas in FindObjectsOfType<Canvas>())
+                    if (canvas.renderMode == RenderMode.WorldSpace)
                         canvas.worldCamera = cam;
             }
 

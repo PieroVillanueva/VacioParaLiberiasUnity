@@ -300,8 +300,8 @@ namespace Autohand {
                 palmChild.parent = palmTransform;
                 SetPalmRays();
             }
-
-            foreach(var cam in FindObjectsOfType<Camera>(true))
+            //foreach(var cam in FindObjectsOfType<Camera>(true))
+            foreach(var cam in FindObjectsOfType<Camera>()) //malogro piero
                 cam.gameObject.AddComponent<HandStabilizer>().hand = this;
             
             if(velocityTracker == null)
