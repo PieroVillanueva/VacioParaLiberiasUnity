@@ -1,10 +1,12 @@
 {
   "dependencies": {
-    "com.unity.collab-proxy": {
-      "version": "1.8.0",
+    "com.ptc.vuforia.engine": {
+      "version": "8.1.12",
       "depth": 0,
       "source": "registry",
-      "dependencies": {},
+      "dependencies": {
+        "com.unity.ugui": "1.0.0"
+      },
       "url": "https://packages.unity.com"
     },
     "com.unity.ext.nunit": {
